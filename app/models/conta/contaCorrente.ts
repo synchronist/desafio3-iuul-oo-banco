@@ -1,6 +1,6 @@
 import { Conta } from "./conta";
 
-export class ContaCorrente extends Conta{
+export class ContaCorrente extends Conta {
 
     private limite: number;
 
@@ -17,7 +17,7 @@ export class ContaCorrente extends Conta{
     public calcularSaldo() {
         const saldo = (this.getExtrato().map((extrato) => extrato.valor));
         const calcSaldo = saldo.reduce((a, b) => a + b, 0);
-        console.log(calcSaldo);
+        console.log("O saldo da sua conta corrente é de : R$ "+ calcSaldo);
         return;
-    }   
+    }
 }

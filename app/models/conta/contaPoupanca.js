@@ -14,7 +14,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.ContaPoupanca = void 0;
 var conta_1 = require("./conta");
 var ContaPoupanca = /** @class */ (function (_super) {
@@ -30,16 +30,21 @@ var ContaPoupanca = /** @class */ (function (_super) {
         var depositos = (this.getExtrato());
         var saldo = 0;
         depositos.forEach(function (depositos) {
-            var menorAno = Math.min(depositos.data.getFullYear());
+            var mesAnterior = depositos.data.getMonth();
+            var difMes = 0;
             saldo += (depositos.valor * (_this.rentabilidadeMensal * (depositos.data.getMonth() - mesAtual)));
-            console.log(saldo);
+            if (mesAnterior != null) {
+                difMes = mesAtual - mesAtual;
+            }
+            console.log("Sua conta poupança tinha o saldo de : R$" + saldo, " Na data de: " + depositos.data, "Rendendo juros de " + _this.rentabilidadeMensal, "% por mês");
+            var mesAnterior = depositos.data.getMonth();
         });
         return;
     };
     ContaPoupanca.prototype.calcularSaldo = function () {
         var saldo = (this.getExtrato().map(function (extrato) { return extrato.valor; }));
         var calcSaldo = saldo.reduce(function (a, b) { return a + b; }, 0);
-        console.log(calcSaldo);
+        console.log("O saldo da sua conta poupança é de : R$ " + calcSaldo);
         return;
     };
     return ContaPoupanca;

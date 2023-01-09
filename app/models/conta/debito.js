@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.Debito = void 0;
 var Debito = /** @class */ (function () {
     function Debito(valor, data) {

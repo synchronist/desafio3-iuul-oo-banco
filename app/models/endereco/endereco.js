@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.Endereco = void 0;
 var Endereco = /** @class */ (function () {
     function Endereco(cep, logradouro, numero, complemento, cidade, uf) {

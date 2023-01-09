@@ -12,15 +12,15 @@ export abstract class Conta {
     constructor(numero: String) {
         this.numero = numero;
     }
-    
+
     public depositar(valor: number, data: Date) {
         new Credito(valor, data);
-        this.extrato.push({valor, data});
+        this.extrato.push({ valor, data });
     }
 
     public sacar(valor: number, data: Date) {
         new Debito(-valor, data);
-        this.extrato.push({valor: -valor, data});
+        this.extrato.push({ valor: -valor, data });
     }
 
     public getExtrato(): Array<ExtratoType> {

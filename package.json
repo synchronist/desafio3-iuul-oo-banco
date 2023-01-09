@@ -10,10 +10,6 @@
     "typescript": "^4.9.4"
   },
   "scripts": {
-    "start": "tsc --outDir dist ./app/principal.ts && node ./app/dist/principal.js"
-  },
-  "compilerOptions": {
-    "target": "dist",
-    "outDir": "app/dist/"
+    "start": "tsc -t es5 ./app/principal.ts && node ./app/principal.js"
   }
 }

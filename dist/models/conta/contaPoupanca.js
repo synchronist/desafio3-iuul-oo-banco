@@ -30,9 +30,14 @@ var ContaPoupanca = /** @class */ (function (_super) {
         var depositos = (this.getExtrato());
         var saldo = 0;
         depositos.forEach(function (depositos) {
-            var menorAno = Math.min(depositos.data.getFullYear());
+            var mesAnterior = depositos.data.getMonth();
+            var difMes = 0;
             saldo += (depositos.valor * (_this.rentabilidadeMensal * (depositos.data.getMonth() - mesAtual)));
+            if (mesAnterior != null) {
+                difMes = mesAtual - mesAtual;
+            }
             console.log(saldo);
+            var mesAnterior = depositos.data.getMonth();
         });
         return;
     };

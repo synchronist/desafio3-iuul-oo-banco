@@ -14,7 +14,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.ContaCorrente = void 0;
 var conta_1 = require("./conta");
 var ContaCorrente = /** @class */ (function (_super) {
@@ -31,7 +31,7 @@ var ContaCorrente = /** @class */ (function (_super) {
     ContaCorrente.prototype.calcularSaldo = function () {
         var saldo = (this.getExtrato().map(function (extrato) { return extrato.valor; }));
         var calcSaldo = saldo.reduce(function (a, b) { return a + b; }, 0);
-        console.log(calcSaldo);
+        console.log("O saldo da sua conta corrente é de : R$ " + calcSaldo);
         return;
     };
     return ContaCorrente;

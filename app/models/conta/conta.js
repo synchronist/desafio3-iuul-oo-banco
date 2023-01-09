@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.Conta = void 0;
 var credito_1 = require("./credito");
 var debito_1 = require("./debito");

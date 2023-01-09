@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.Pessoa = void 0;
 var Pessoa = /** @class */ (function () {
     function Pessoa(cpf, nome, telefone) {

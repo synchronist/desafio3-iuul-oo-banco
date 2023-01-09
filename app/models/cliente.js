@@ -14,7 +14,7 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 exports.Cliente = void 0;
 var pessoa_1 = require("./pessoa/pessoa");
 var Cliente = /** @class */ (function (_super) {

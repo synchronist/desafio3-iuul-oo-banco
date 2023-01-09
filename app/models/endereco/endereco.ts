@@ -1,5 +1,5 @@
 export class Endereco {
-   
+
     private cep: String;
     private logradouro: String;
     private numero: String;

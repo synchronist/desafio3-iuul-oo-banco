@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 var cargo_1 = require("./models/cargo/cargo");
 var cliente_1 = require("./models/cliente");
 var contaCorrente_1 = require("./models/conta/contaCorrente");
